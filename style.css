@@ -1,0 +1,253 @@
+/*body reset*/
+body{margin: 0;}
+
+/*image triming*/
+.header0 {
+    background: #fff;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+
+}
+.header0 img{
+  width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*content*/
+article{
+   margin: 70px auto 100px;
+}
+
+/*image triming*/
+.article01 {
+    background: #fff;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+
+}
+.article01 img{
+  width: 100%;
+    height: auto;
+    display: block;
+}
+.article01 p{
+  padding: 0 30px;
+}
+
+
+
+/*head_line design*/
+.headline1{
+  margin: 0 0 60px;
+  text-align: center;
+}
+
+h3{
+  font-size: 42px;
+  font-weight: 400;
+}
+
+/*breadcrump*/
+.breadcrumb {
+  margin-left:0;
+  background-color: #222;
+  padding: 9px 10px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.breadcrumb li{
+  display:inline;
+  font-size: 12px;
+  list-style: none;
+  font-weight: bold;
+}
+
+.breadcrumb li:after{/* part of >*/
+  content: '>';
+  padding: 0 3px;
+  color: #fff;
+}
+
+.breadcrumb li:last-child:after{
+  content: '';
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+#content{
+      margin: 70px auto 100px;
+      width: 100%;
+}
+
+
+.article02{
+    width: 100%;
+    margin: 0 10% 0 10%;
+    
+}
+
+.food-list {
+    width: 370px;
+    float: left;
+    margin: 0 45px 0 0;
+  }
+.food-list .img {
+    width: 370px;
+    height: 240px;
+    display: block;
+    margin: 0 0 16px 0;
+}
+
+/* img effect*/ 
+.view {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  overflow: hidden;
+}
+
+.view .mask,
+.view .content {
+  width: 370px;
+  height: 240px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0
+}
+
+.food-list .mask {
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.4s ease-in-out;
+}
+
+.food-list .mask h2 {
+  transform: translateY(-100px);
+  opacity: 0;
+  font-size: 38px;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  margin: 80px 0 20px;
+}
+
+.food-list a.info {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  color:#fff;
+}
+
+
+.food-list:hover .mask {
+  opacity: 1;
+}
+
+.food-list:hover h2{
+  opacity: 1;
+  transform: translateY(0px);
+}
+.food-list:hover a.info {
+  opacity: 1;
+  transform: translateY(0px);
+  border: 1px #333 solid; 
+  background-color: #333;
+  text-decoration: none;
+  padding:8px 16px;
+  border-radius: 8px;
+}
+
+
+.food-list:hover a.info {
+  transition-delay: 0.2s;
+}
+
+
+.omiyage-list{
+    width: 570px;
+    float: left;
+    margin: 0 60px 0 0;
+}
+
+.omiyage-list img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 0 16px 0;
+      transform: scaleY(1);
+  transition: all .7s ease-in-out;
+}
+
+/* img effect-Omiyage*/ 
+
+.omiyage-list .mask {
+  background-color: rgba(204, 204, 204, 0.3);
+  transition: all 0.5s linear;
+  opacity: 0;
+  width:570px;
+  height: 330px;
+}
+
+.omiyage-list h2 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  background: transparent;
+  margin: 50px 40px 0px 40px;
+  transform: scale(0);
+  color: #333;
+  transition: all 0.5s linear;
+  opacity: 0;
+  font-size: 42px;
+}
+
+.omiyage-list p {
+  color: #333;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s linear;
+  padding-bottom: 20px;
+}
+
+.omiyage-list a.info {
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.5s linear;
+  border: 1px #333 solid; 
+  background-color: #333;
+  text-decoration: none;
+  padding:8px 16px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.omiyage-list:hover img {
+  -webkit-transform: scale(10);
+  transform: scale(10);
+  opacity: 0;
+}
+
+.omiyage-list:hover .mask {
+  opacity: 1;
+}
+
+.omiyage-list:hover h2,
+.omiyage-list:hover p,
+.omiyage-list:hover a.info {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.clear{
+  clear: both;
+}

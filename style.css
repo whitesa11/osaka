@@ -17,7 +17,7 @@ body{margin: 0;}
 
 /*content*/
 article{
-   margin: 70px auto 100px;
+   margin: 70px auto 30px;
 }
 
 /*image triming*/
@@ -93,13 +93,12 @@ h3{
 
 .article02{
     width: 100%;
-    margin: 0 10% 0 10%;
+    text-align:center;
     
 }
 
 .food-list {
     width: 370px;
-    float: left;
     margin: 0 45px 0 0;
   }
 .food-list .img {
@@ -177,7 +176,6 @@ h3{
 
 .omiyage-list{
     width: 570px;
-    float: left;
     margin: 0 60px 0 0;
 }
 
@@ -186,7 +184,7 @@ h3{
     height: auto;
     display: block;
     margin: 0 0 16px 0;
-      transform: scaleY(1);
+    transform: scaleY(1);
   transition: all .7s ease-in-out;
 }
 
@@ -247,7 +245,9 @@ h3{
   transform: scale(1);
   opacity: 1;
 }
-
+.list-right{
+  margin:0;
+}
 .clear{
   clear: both;
 }

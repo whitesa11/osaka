@@ -36,6 +36,11 @@ body {
     font-family: 'Anton', sans-serif;
 }
 
+.logo a{
+    color: #fff;
+    text-decoration: none;
+}
+
 /* style: global navigation */
 .global_navi {
     float: right;

@@ -295,7 +295,7 @@ body {
 .social_icon ul {
     position: absolute;
     left: 50%;
-    margin-left: -102px;
+    margin-left: -138px;
     list-style-type: none;
 }
 
@@ -306,4 +306,10 @@ body {
 .social_icon ul li a {
     margin: 0 10px;
     display: block;
+}
+
+.footer small {
+    display: inline-block;
+    margin-left: 610px;
+    margin-top: 90px;
 }

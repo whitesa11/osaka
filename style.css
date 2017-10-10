@@ -323,8 +323,13 @@ th.ster{
   font-size: 20px;
 }
 
+.caption {
+  height:50px;
+  position: relative;
+}
 .caption p{
   font-size: 12px;
-  position: relative;
+  position: absolute;
   left: 75%;
 }
+

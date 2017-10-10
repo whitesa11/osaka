@@ -40,13 +40,15 @@
         <div class="location_head">
             <h2>Location</h2>
         </div>
-        <div class="location_address">
-            <h3>Address:</h3>
-            <p>1-13-18 Sakura, Minoo-shi,<br> Osaka-hu, 562-0041, Japan</p>
-        </div>
-        <div class="location_map">
-           <h3>Map:</h3>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.3492290954514!2d135.45873851523538!3d34.82231098040348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000fa6db83fbf1b%3A0x775013b9893cec6c!2s6+Chome-1-13-18+Sakura%2C+Minoo-shi%2C+%C5%8Csaka-fu+562-0041%2C+Japan!5e0!3m2!1sen!2sca!4v1507584224441" width="400" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="location_content">
+            <div class="location_address">
+                <h3>Address:</h3>
+                <p>1-13-18 Sakura, Minoo-shi,<br> Osaka-hu, 562-0041, Japan</p>
+            </div>
+            <div class="location_map">
+                <h3>Map:</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.3492290954514!2d135.45873851523538!3d34.82231098040348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000fa6db83fbf1b%3A0x775013b9893cec6c!2s6+Chome-1-13-18+Sakura%2C+Minoo-shi%2C+%C5%8Csaka-fu+562-0041%2C+Japan!5e0!3m2!1sen!2sca!4v1507584224441" width="600" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
         </div>
     </div>
     <!-- Location info end at here -->
@@ -59,28 +61,30 @@
             <h3>Contact Form:</h3>
         </div>
         <div class="contact_form">
-            <form action="/" method="post">
-                <table>
-                    <tr class="user_name">
+            <form action="/" method="post" class="user_form">
+                <table class="info_area">
+                    <tr class="user_info">
                         <th>Name*</th>
-                        <td><input type="text" name="target_name"></td>
-                    </tr>
-                    <tr class="user_email">
                         <th>Email*</th>
-                        <td><input type="text" name="target_email"></td>
-                    </tr>
-                    <tr class="user_phone">
                         <th>Phone*</th>
+                    </tr>
+                    <tr class="userInfo_input">
+                        <td><input type="text" name="target_name"></td>
+                        <td><input type="text" name="target_email"></td>
                         <td><input type="text" name="target_phone"></td>
                     </tr>
-                    <tr class="user_message">
+                </table>
+                <table class="user_message">
+                    <tr class="message_info">
                         <th>Message*</th>
-                        <td><textarea name="target_area" cols="80" rows="8"></textarea></td>
                     </tr>
-                    <tr>
-                        <td><input type="submit" value="SEND FORM"></td>
+                    <tr class="message_area">
+                        <td><textarea name="message"cols="83" rows="10"></textarea> </td>
                     </tr>
                 </table>
+                <div class="submit_button">
+                    <input type="submit" id="submit_button"  value="SEND FORM">
+                </div>
             </form>
         </div>
     </div>

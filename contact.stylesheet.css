@@ -255,7 +255,7 @@ body {
 
 .submit_button {
     width: 100%;
-    margin-left: 550px;
+    text-align: center;
 }
 
 input#submit_button {

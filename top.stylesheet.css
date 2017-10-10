@@ -12,7 +12,7 @@ body {
     height: 100%;
 }
 
-h1{
+h2{
     letter-spacing: 5px;
 }
 
@@ -35,10 +35,13 @@ h1{
 }
 
 .logo {
-    color: white;
+    color: #fff;
     font-family: 'Anton', sans-serif;
 }
-
+.logo a{
+    color: #fff;
+    text-decoration: none;
+}
 /* style: global navigation */
 .global_navi {
     float: right;
@@ -62,10 +65,11 @@ h1{
     color: white;
     text-decoration: none;
 }
-
-.global_navi ul li a:hover{
-    text-decoration: underline;
+/* nav link hover orange line */
+.underline:hover{
+   border-bottom: 2px solid #ff4500;
 }
+
 /* ①　style: First Wrapper */
 .wrapper_first {
     position: relative;
@@ -111,7 +115,7 @@ h1{
     background-repeat: no-repeat;
 }
 
-#main_content h1 {
+#main_content h2 {
     margin: 0px;
     padding: 140px 150px 0px;
     color: white;
@@ -159,7 +163,7 @@ h1{
     background-repeat: no-repeat;
 }
 
-#main_content_2 h1 {
+#main_content_2 h2 {
     margin: 0px;
     padding: 140px 150px 0px;
     color: white;
@@ -207,7 +211,7 @@ h1{
     background-repeat: no-repeat;
 }
 
-#main_content_3 h1 {
+#main_content_3 h2 {
     margin: 0px;
     padding: 140px 150px 0px;
     color: white;
@@ -255,7 +259,7 @@ h1{
     background-repeat: no-repeat;
 }
 
-#main_content_4 h1 {
+#main_content_4 h2 {
     margin: 0px;
     padding: 140px 150px 0px;
     color: white;

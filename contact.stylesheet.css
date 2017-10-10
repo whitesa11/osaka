@@ -59,12 +59,65 @@ body {
     text-decoration: none;
 }
 
+/* */ /* 1920_420 */
+.header0 {
+    width: 100%;
+    position: relative;
+}
+
+.header0 img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* style: breadcrum */
+.breadcrumb {
+  margin-left:0;
+  background-color: #000;
+  padding: 9px 60px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.breadcrumb li{
+  display:inline;
+  font-size: 12px;
+  list-style: none;
+  font-weight: bold;
+}
+
+.breadcrumb li:after{/* part of >*/
+  content: '>';
+  padding: 0 3px;
+  color: #fff;
+}
+
+.breadcrumb li:last-child:after{
+  content: '';
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
 /* style: contact head */
 .contact_head {
     width: 100%;
     height: 30px;
-    margin-top: 100px;
+    margin-top: 40px;
     text-align: center;
+}
+
+.contact_head h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 42px;
+    letter-spacing: 5px;
 }
 
 /* style: location info */
@@ -80,8 +133,11 @@ body {
 .location_head h2 {
     width: 100%;
     height: 30px;
-    margin-top: 80px;
+    margin-top: 100px;
     text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-style: bold;
+    font-size: 38px;
 }
 
 .location_address {
@@ -98,11 +154,17 @@ body {
     height: auto;
     margin: 20px;
     padding: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-style: bold;
+    font-size: 28px;
 }
 
 .location_address p {
     margin: 20px;
     padding: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-style: bold;
+    font-size: 18px;
 }
 
 .location_map {
@@ -118,6 +180,9 @@ body {
     height: auto;
     margin: 20px;
     padding: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-style: bold;
+    font-size: 28px;
 }
 
 .location_map iframe {
@@ -136,23 +201,32 @@ body {
     height: 30px;
     margin-top: 80px;
     text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-style: bold;
+    font-size: 38px;
 }
 
 .contactForm_head h3 {
     width: 100%;
     height: 30px;
-    margin-top: 30px;
+    margin-top: 60px;
     text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-style: bold;
+    font-size: 28px;
 }
 
 .info_area {
     width: 300px;
-    margin-top: 40px;
+    margin-top: 60px;
     margin-left: 450px;
 }
 
 .user_info th {
     text-align: left;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-style: bold;
+    font-size: 20px;
 }
 
 .userInfo_input input{
@@ -163,11 +237,15 @@ body {
 
 .user_message {
     width: 300px;
+    margin-top: 20px;
     margin-left: 450px;
 }
 
 .message_info th {
     text-align: left;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-style: bold;
+    font-size: 20px;
 }
 
 .submit_button {
@@ -177,11 +255,25 @@ body {
 
 input#submit_button {
     width: 300px;
+    height: 50px;
     margin-top: 10px;
-    font-size: 20px;
-    background-color: #e6e1e1;
+    background: #333; 
+    color: #fff; 
+    font-size: 1.5em;
+    border: solid 1px;
 }
 
+input#submit_button:hover {
+    background: #fff; 
+    color: #333; 
+    border: solid 1px #333; transition: all 0.5s;
+}
+
+input#submit_button:active {
+    background: #c00; 
+    color: #fff;
+}
+ 
 /* style: footer */
 .footer {
     width: 100%;

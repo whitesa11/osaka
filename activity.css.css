@@ -1,8 +1,8 @@
 body{
-    margin:0 auto;
-    padding:0;
-    background-color: #fff;
+    margin:0;
+    /*background-color: #fff;*/
 }
+
 
 #top_contents{
     width:100%;
@@ -11,30 +11,76 @@ body{
 
 #main_visual{
     width:100%;
-    height: 600px;
-    background-position:center center; 
+    height: 300px;
+     position: relative;
+    top: 0px;
+    left: 0px;
+    background-position:center; 
     background-size: cover;
     background-attachment:fixed;
-    background-image: url("Osaka-Prefecture.jpg");
+    background-image: url("images/Osaka-Prefecture.jpg");
+    overflow: hidden;
+}
+
+/*breadcrump*/
+.breadcrumb {
+  margin-left:0;
+  background-color: #000;
+  padding: 9px 60px;
+  margin: 0 auto;
+  overflow: hidden;
+
+}
+
+.breadcrumb li{
+  display:inline;
+  font-size: 12px;
+  list-style: none;
+  font-weight: bold;
+}
+
+.breadcrumb li:after{/* part of >*/
+  content: '>';
+  padding: 0 3px;
+  color: #fff;
+}
+
+.breadcrumb li:last-child:after{
+  content: '';
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+a{
+    color:aliceblue;
+    text-decoration-line: none;
+}
+
+a:hover{
+    text-decoration-line: underline;
+    text-decoration-color: white;
+}
+
+#top_contents{
+    padding:0 10%;
+}
+#bottom_contents{
+    padding:0 10%;
 }
 
 #main{
-    margin-top:10px;
+    margin-top:20px;
 }
 
 .main_text1:hover,.main_text2:hover,.main_text3:hover,.main_text4:hover,.main_text5:hover,.main_text6:hover{
     box-shadow:0px 0px 10px 7px rgba(0, 0, 0, 0.2);
-}
-
-h1{
-    margin: 0 auto;
-    text-align: center; 
-    color:aliceblue;
-    /*padding-top:300px;*/
-    letter-spacing: 5px;
-    padding-top:300px;
-    color:black;
-    font-size: 60px;
 }
 
 h2{
@@ -73,15 +119,11 @@ input[type="checkbox"].on-off:checked + .slide{
     height:100%;
 }
 
-div{
-    background-color: white;
-}
-
 .main_text1{
     width: 25%;
     background: white;
+    margin:0 24px 8px 0;
     float:left;
-    margin-left:5%;
 }
 
 
@@ -92,15 +134,15 @@ div{
 
 .main_text2{
     width:25%;
-    float:left;
-    margin-left: 5%;
+    margin:0 24px 8px 0;
+     float:left;
 }
 
 
 .main_text3{
     width:25%;
-    float:left;
-    margin-left: 5%;
+     float:left;
+
 }
 
 .clearfix::after{
@@ -109,6 +151,11 @@ div{
     clear:both;
 }
 
+.clear{
+  clear: both;
+}
+
+
 #bottom_contents{
     width:100%;
     text-align: center;
@@ -116,17 +163,14 @@ div{
 
 .main_text4{
     width:25%;
-    float:left;
-    clear:both;
-    margin-left: 5%;
-    margin-top: 5%;
+    float: left;
+    margin:50px 24px 8px 0;
 }
 
 .main_text5{
     width:25%;
     float:left;
-    margin-left: 5%;
-    margin-top: 5%;
+    margin:50px 24px 8px 0;
 }
 
 .main_text6 img{
@@ -136,25 +180,27 @@ div{
 .main_text6{
     width:25%;
     float:left;
-    margin-left: 5%;
-    margin-top: 5%;
+    margin:50px 24px 0 0;
 }
 
 label:hover{
     box-shadow:0 0 0 3px rgba(0,0,0,0.2);
 }
 
-button{
+.button{
     border-radius: 10px;
 }
 
-button:hover{
+.button:hover{
     box-shadow:0px 0px 0px 3px rgba(0, 0, 0, 0.2);
 }
 
-a{
+.slide .button a{
     padding:5px;
     font-size: 25px;
     text-decoration: none;
+    margin-right: 5px;
+    color: black;
 }
+
 

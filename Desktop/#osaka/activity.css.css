@@ -1,0 +1,250 @@
+body{
+    margin:0 auto;
+    padding:0;
+    /*background-color: #fff;*/
+}
+
+/* style: header */
+.header {
+    width: 100%;
+    height: 80px;
+    /*z-index: 100;*/
+    background-color: black;
+}
+
+/* style: logo at header */
+.logo {
+    width: auto;
+    height: auto;
+    margin-left: 50px;
+    padding: 0px;
+    float: left;
+    border: 0px solid black;
+    color: white;
+    font-family: 'Anton', sans-serif;
+}
+
+/* style: global navigation */
+.global_navi {
+    float: right;
+}
+
+.global_navi ul {
+    margin: 0px 50px 0px 0px;
+    padding: 0px;
+    list-style-type: none;
+    border: 0px solid black;
+}
+
+.global_navi ul li {
+    display: table-cell;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.global_navi ul li a {
+    display: inline-block;
+    padding: 30px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.global_navi ul li a:hover{
+    text-decoration-line: underline;
+    text-decoration-color: orangered;
+    
+}
+
+
+#top_contents{
+    width:100%;
+    text-align: center;
+}
+
+#main_visual{
+    width:100%;
+    height: 300px;
+    background-position:center center; 
+    background-size: cover;
+    background-attachment:fixed;
+    background-image: url("images/Osaka-Prefecture.jpg");
+}
+
+#navi{
+    background-color: black;
+    color:aliceblue;
+    height: 30px;
+    padding-top: 15px;
+}
+
+
+a{
+    color:aliceblue;
+    margin-left: 40px;
+    text-decoration-line: none;
+}
+
+a:hover{
+    text-decoration-line: underline;
+    text-decoration-color: white;
+}
+
+#main{
+    margin-top:20px;
+}
+
+.main_text1:hover,.main_text2:hover,.main_text3:hover,.main_text4:hover,.main_text5:hover,.main_text6:hover{
+    box-shadow:0px 0px 10px 7px rgba(0, 0, 0, 0.2);
+}
+
+h2{
+    margin-top:-4px;
+    font-size:30px;
+}
+
+label{
+    background-color: #fff;
+    padding:10px;
+    display: block;
+    border: 1px solid;
+}
+
+input[type="checkbox"].on-off{
+    display:none;
+}
+
+#main .slide{
+    line-height: 1.6;
+    -webkit-transition:all 0.5s;
+    -moz-transition:all 0.5s;
+    -ms-transition:all 0.5s;
+    -o-transition:all 0.5s;
+    transition:all 0.5s;
+    margin:0;
+    padding:0;
+}
+
+input[type="checkbox"].on-off + .slide{
+    height: 0;
+    overflow: hidden;
+}
+
+input[type="checkbox"].on-off:checked + .slide{
+    height:100%;
+}
+
+.main_text1{
+    width: 25%;
+    background: white;
+    float:left;
+    margin-left:5%;
+}
+
+
+#main img{
+    width: 100%;
+    height: 300px;
+}
+
+.main_text2{
+    width:25%;
+    float:left;
+    margin-left: 5%;
+}
+
+
+.main_text3{
+    width:25%;
+    float:left;
+    margin-left: 5%;
+}
+
+.clearfix::after{
+    content:'';
+    display: inline-block;
+    clear:both;
+}
+
+#bottom_contents{
+    width:100%;
+    text-align: center;
+}
+
+.main_text4{
+    width:25%;
+    float:left;
+    clear:both;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.main_text5{
+    width:25%;
+    float:left;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.main_text6 img{
+    width:100%;
+}
+
+.main_text6{
+    width:25%;
+    float:left;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+label:hover{
+    box-shadow:0 0 0 3px rgba(0,0,0,0.2);
+}
+
+button{
+    border-radius: 10px;
+}
+
+button:hover{
+    box-shadow:0px 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+.slide button a{
+    padding:5px;
+    font-size: 25px;
+    text-decoration: none;
+    margin-right: 5px;
+    color: black;
+}
+
+.footer {
+    width: 100%;
+    height: 150px;
+    background-color: #f2f1f1;
+    clear: both;
+}
+
+.social_icon {
+    position: relative;
+    clear: both;
+}
+
+.social_icon ul {
+    position:absolute;
+    left: 50%;
+    margin-left: -190px;
+    list-style-type: none;
+}
+
+.social_icon ul li {
+    display: table-cell;
+}
+
+.social_icon ul li a {
+    margin: 0 10px;
+    display: block;
+}
+
+.footer small {
+    display: inline-block;
+    margin-left: 560px;
+    margin-top: 90px;
+}
